@@ -1,0 +1,20 @@
+structure: 
+  index.js 
+  serve-files.js
+  api.js
+  public
+    index.html
+    script.js 
+    style.css
+page incudes form, input, button: add, ul
+  li will include remove buttons
+api endpoints:
+  POST /user, add to array, empty response
+  GET /users, respond with json of array
+  DELETE /user, receive name, remove if found, empty response
+
+
+
+
+
+  
