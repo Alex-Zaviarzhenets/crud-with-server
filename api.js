@@ -24,7 +24,11 @@ module.exports = function handleApi(request, response) {
       break;
 
     case 'DELETE/user':
-      
+      request.addListener('data', (buffer) => {
+        const index = String(buffer)
+        users.splice(index)
+        response.end()
+      })
       break;
 
     default:
